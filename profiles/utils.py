@@ -1,7 +1,7 @@
 
 from openai import OpenAI
 
-client = OpenAI(api_key='sk-proj-kO691MRRRdRonwOuoBmPT3BlbkFJI0yTx23BfRtGeXrM00Mx')
+client = OpenAI(api_key='')
 import json
 import re
 
