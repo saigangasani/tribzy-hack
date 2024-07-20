@@ -1,0 +1,11 @@
+<!-- templates/profiles/profile_success.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4">Profile Created Successfully!</h2>
+    <p>Thank you for creating your profile. You can now explore Tribzy.</p>
+    <br>
+    <a href="{% url 'find_matches' %}" class="bg-blue-500 text-white px-4 py-2 rounded">Find Your Roommate</a>
+</div>
+{% endblock %}

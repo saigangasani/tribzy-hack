@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-600">Your Matches</h2>
+    {% if matches %}
+        <div class="space-y-4">
+            {% for profile, score in matches %}
+            <div class="p-4 border rounded-md shadow-sm">
+                <div class="flex items-center">
+                    <div>
+                        <h3 class="text-xl font-bold">{{ profile.name }}</h3>
+                        <p class="text-sm text-gray-600">Match Score: {{ score }}</p>
+                        <p class="text-sm text-gray-600">Career Domain: {{ profile.career_domain }}</p>
+                        <p class="text-sm text-gray-600">Major: {{ profile.major }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-center text-gray-600">No matches found.</p>
+    {% endif %}
+</div>
+{% endblock %}

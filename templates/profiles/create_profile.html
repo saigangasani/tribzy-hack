@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-600">Create Your Profile</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="space-y-6">
+            {{ form.non_field_errors }}
+
+            <div>
+                <label for="{{form.name.id_for_label }}" class="block text-sm font-medium text-gray-700"> Name </label>
+                {{ form.name|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.name.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.profile_picture.id_for_label }}" class="block text-sm font-medium text-gray-700">Profile Picture</label>
+                {{ form.profile_picture|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.profile_picture.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.guest_frequency.id_for_label }}" class="block text-sm font-medium text-gray-700">Guest Frequency</label>
+                {{ form.guest_frequency|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.guest_frequency.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.sleep_pattern.id_for_label }}" class="block text-sm font-medium text-gray-700">Sleep Pattern</label>
+                {{ form.sleep_pattern|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.sleep_pattern.errors }}
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Hobbies/Interests</label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="singing" name="hobbies_interests" value="Singing" class="mr-2">
+                        <label for="singing" class="cursor-pointer">Singing</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="movies" name="hobbies_interests" value="Movies" class="mr-2">
+                        <label for="movies" class="cursor-pointer">Movies</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cricket" name="hobbies_interests" value="Cricket" class="mr-2">
+                        <label for="cricket" class="cursor-pointer">Cricket</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="badminton" name="hobbies_interests" value="Badminton" class="mr-2">
+                        <label for="badminton" class="cursor-pointer">Badminton</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="reading" name="hobbies_interests" value="Reading" class="mr-2">
+                        <label for="reading" class="cursor-pointer">Reading</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="traveling" name="hobbies_interests" value="Traveling" class="mr-2">
+                        <label for="traveling" class="cursor-pointer">Traveling</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cooking" name="hobbies_interests" value="Cooking" class="mr-2">
+                        <label for="cooking" class="cursor-pointer">Cooking</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="gaming" name="hobbies_interests" value="Gaming" class="mr-2">
+                        <label for="gaming" class="cursor-pointer">Gaming</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="music" name="hobbies_interests" value="Music" class="mr-2">
+                        <label for="music" class="cursor-pointer">Music</label>
+                    </div>
+                </div>
+                {{ form.hobbies_interests.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.smoking_drinking.id_for_label }}" class="block text-sm font-medium text-gray-700">Smoking/Drinking</label>
+                {{ form.smoking_drinking|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.smoking_drinking.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.pet_friendly.id_for_label }}" class="block text-sm font-medium text-gray-700">Pet-Friendly</label>
+                {{ form.pet_friendly|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.pet_friendly.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.gender.id_for_label }}" class="block text-sm font-medium text-gray-700">Gender</label>
+                {{ form.gender|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.gender.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.diet.id_for_label }}" class="block text-sm font-medium text-gray-700">Diet</label>
+                {{ form.diet|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.diet.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.personality.id_for_label }}" class="block text-sm font-medium text-gray-700">Personality</label>
+                {{ form.personality|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.personality.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.travel_pattern.id_for_label }}" class="block text-sm font-medium text-gray-700">Travel Pattern</label>
+                {{ form.travel_pattern|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.travel_pattern.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.state.id_for_label }}" class="block text-sm font-medium text-gray-700">State in the US</label>
+                {{ form.state|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.state_in_us.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.major.id_for_label }}" class="block text-sm font-medium text-gray-700">Major</label>
+                {{ form.major|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.major.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.degree_type.id_for_label }}" class="block text-sm font-medium text-gray-700">Degree Type</label>
+                {{ form.degree_type|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.degree_type.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.career_domain.id_for_label }}" class="block text-sm font-medium text-gray-700">Career Domain</label>
+                {{ form.career_domain|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.career_domain.errors }}
+            </div>
+
+            <div>
+                <label for="{{ form.cooking_skills.id_for_label }}" class="block text-sm font-medium text-gray-700">Cooking Skills (1-10)</label>
+                {{ form.cooking_skills|add_class:"mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" }}
+                {{ form.cooking_skills.errors }}
+            </div>
+
+ 
+        </div>
+        <div class="mt-6 text-center">
+            <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
