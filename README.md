@@ -57,13 +57,15 @@ Tribzy is a revolutionary platform designed to streamline the process of finding
 
 
 ## Screenshots
-1. **Login Page**:
+1.**Signup Page**:
+   ![SignUp Page](Tribzy-Signup.png)
+2. **Login Page**:
    ![Login Page](Tribzy-Login.png)
-2. **Create Profile Page**:
+3. **Create Profile Page**:
    ![Create Profile Page](Tribzy-Profile.png)
-3. **Profile Success Page**:
+4. **Profile Success Page**:
    ![Profile Success Page](Tribzy_Profile_Success.png)
-4. **Response/Result**:
+5. **Response/Result**:
    ![Result](Tribzy-Result.png)
 
 ## User Flow Explanation
