@@ -78,5 +78,5 @@ This project is licensed under the MIT License.
    ![Profile Success Page](Tribzy-Result.png)
 
 ## Contact
-For more information, please contact [tribzyco@gmail.com].
+For more information, please contact tribzyco@gmail.com
 
