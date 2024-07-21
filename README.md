@@ -75,8 +75,33 @@ This project is licensed under the MIT License.
 2. **Create Profile Page**:
    ![Create Profile Page](Tribzy-Profile.png)
 3. **Profile Success Page**:
-   ![Profile Success Page](Tribzy-Result.png)
+   ![Profile Success Page](Tribzy_Profile_Success.png)
+4. **Response/Result**:
+   ![Result](Tribzy-Result.png)
+
+## User Flow Explanation
+1. **Sign Up**:
+    - Users start by signing up on the platform, providing their username, email address, and password.
+    - After signing up, they are redirected to the login page.
+
+2. **Login**:
+    - Users log in with their credentials.
+    - Upon successful login, users are redirected to the profile creation page.
+
+3. **Profile Creation**:
+    - Users fill out their detailed profile, including preferences, habits, and interests.
+    - The form includes fields such as guest frequency, sleep pattern, hobbies, smoking/drinking habits, pet-friendliness, gender, diet, personality, travel pattern, state in the US, major, degree type, career domain, and cooking skills.
+    - Users can upload a profile picture and provide their name.
+
+4. **Profile Success**:
+    - Upon submitting the profile form, users are redirected to a success page that confirms their profile has been created successfully.
+    - Users can then proceed to find their roommate by clicking the "Find Your Roommate" button.
+
+5. **Find Matches**:
+    - The AI algorithm processes the user profile and compares it with existing profiles in the database.
+    - Matches are displayed with compatibility scores, allowing users to find the most compatible roommates.
 
 ## Contact
 For more information, please contact tribzyco@gmail.com
+
 
