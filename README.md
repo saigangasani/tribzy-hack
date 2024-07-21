@@ -49,25 +49,12 @@ Tribzy is a revolutionary platform designed to streamline the process of finding
     ```
 
 ## Usage
-1. **Sign up**:
-    - Navigate to the signup page and create an account.
+1. **Sign up**: Navigate to the signup page and create an account.
 
-2. **Create Profile**:
-    - Fill in your profile details, including preferences, habits, and interests.
+2. **Create Profile**: Fill in your profile details, including preferences, habits, and interests.
 
-3. **Find Matches**:
-    - Once your profile is created, use the matching feature to find compatible roommates.
+3. **Find Matches**: Once your profile is created, use the matching feature to find compatible roommates.
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
-
-## License
-This project is licensed under the MIT License.
 
 ## Screenshots
 1. **Login Page**:
@@ -100,6 +87,17 @@ This project is licensed under the MIT License.
 5. **Find Matches**:
     - The AI algorithm processes the user profile and compares it with existing profiles in the database.
     - Matches are displayed with compatibility scores, allowing users to find the most compatible roommates.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+This project is licensed under the MIT License.
 
 ## Contact
 For more information, please contact tribzyco@gmail.com
