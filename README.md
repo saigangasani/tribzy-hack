@@ -1,7 +1,7 @@
 # Tribzy - Roommate Matching Platform
 
 ## Introduction
-Tribzy is a revolutionary platform designed to streamline the process of finding compatible roommates for students and young professionals. Our platform leverages advanced AI algorithms to provide highly accurate roommate matches based on user profiles and preferences. This project was developed during the Austin AI Community Hackathon!
+Tribzy is a revolutionary platform designed to streamline the process of finding compatible roommates for students and young professionals. Our platform leverages advanced AI algorithms to provide highly accurate roommate matches based on user profiles and preferences. This project was developed during the [Austin AI Community Hackathon](https://lu.ma/atx-hackathon?tk=7YJAeZ)!
 
 ## Features
 - **User Profile Creation**: Create detailed profiles with preferences, habits, and interests.
